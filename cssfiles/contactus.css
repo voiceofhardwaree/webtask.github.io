@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contactdone{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../images/cbackground.jpg');
+    background-size: cover;
+}
+.contactdone .mydatacontent{
+    max-width: 800px;
+    text-align: center;
+}
+.contactdone .mydatacontent h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+.contactdone .mydatacontent p{
+    font-size: 36px;
+    font-weight: 300;
+    color: #fff;
+}
+.contactdone .datacontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+}
+.contactdone .datacontainer .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contactdone .datacontainer .contactinfo .mybox{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactdone .datacontainer .contactinfo .mybox .myicon{
+    min-width: 60px;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    }
+    .contactdone .datacontainer .contactinfo .mybox .mytext{
+        display: flex;
+        margin-left: 20px;
+        font-size: 16px;
+        color: #fff;
+        flex-direction: column;
+        font-size: 300;
+    }
+    .contactdone .datacontainer .contactinfo .mybox .mytext h3{
+        font-weight: 500;
+        color: #c02e30;
+    }
+    .contactdone .datacontainer .contactformdata{
+        width: 40%;
+        padding: 15px;
+        background:#fff;
+    }
+    .contactdone .datacontainer .contactformdata h2{
+       font-size: 30px;
+       color: #333;
+       font-weight: 500; 
+    }
+    .contactdone .datacontainer .contactformdata .inputbox{
+      position: relative;
+      width: 100%;
+      margin-top: 7px;
+    }
+    .contactdone .datacontainer .contactformdata .inputbox input,
+    .contactdone .datacontainer .contactformdata .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 12px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    }
+    .contactdone .datacontainer .contactformdata .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+    }
+    .contactdone .datacontainer .contactformdata .inputbox input:focus ~ span,
+    .contactdone .datacontainer .contactformdata .inputbox input:valid ~ span,
+    .contactdone .datacontainer .contactformdata .inputbox textarea:focus ~ span,
+    .contactdone .datacontainer .contactformdata .inputbox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+    }
+    .contactdone .datacontainer .contactformdata .inputbox input[type="submit"]{
+        width: 100px;
+        background: #c02e30;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+    }
+    @media(max-width:991px){
+        .contactdone{
+            padding: 50px;
+        }
+        .contactdone .datacontainer{
+            flex-direction: column;
+        }
+        .contactdone .datacontainer .contactinfo{
+           margin-bottom: 40px;
+           width: 100%;
+        }
+        .contactdone .datacontainer .contactformdata{
+            width: 100%;
+           
+        }
+        .contactdone .mydatacontent p{
+            font-size: 10px;
+            font-weight: 300;
+            color: #fff;
+        }
+        .contactdone .datacontainer .contactinfo .mybox{
+            
+            padding: 2px 0;
+            
+        }
+        .contactdone .datacontainer .contactinfo .mybox .mytext {
+            font-size: 12px;
+        }
+        .contactdone .datacontainer .contactinfo .mybox .mytext h3{
+            font-size: 20px;
+        }
+        .contactdone .mydatacontent h2{
+           padding-top: 5px;
+        }
+        .sectionone .navbar .navbar-brand{
+            font-size: 12px;
+        }
+    
+    }
+
+   
